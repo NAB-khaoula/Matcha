@@ -1,0 +1,47 @@
+// font family
+$font-primary: 'Google Sans';
+
+// palette
+$color-action: #F11926 !default;
+$color-action-hover: #F11926 !default;
+
+$color-text-default: #737373 !default;
+$color-text-light: #eef2f7 !default;
+$color-white: #ffffff;
+
+$background-secondary: #fffdef !default;
+$background-primary: #f1f1f1 !default;
+
+
+// breakpoints
+$small-screen: 768px;
+$medium-screen: 992px;
+$large-screen: 1200px;
+
+// spacing
+$spacing-3xs: 0.4rem;
+$spacing-2xs: 0.8rem;
+$spacing-xs: 1.2rem;
+$spacing-s: 1.6rem;
+$spacing-sm: 2rem;
+$spacing-m: 2.4rem;
+$spacing-xl: 3.2rem;
+$spacing-2xl: 4rem;
+
+// size
+$font-size-xs: 1.2rem;
+$font-size-s: 1.4rem;
+$font-size-m: 1.6rem;
+
+// weight
+$font-weight-light: 300;
+$font-weight-medium: 500;
+
+// border
+$border-radius-s: 0.4rem;
+$border-radius-xs: 0.2rem;
+$border-radius-2xs: 0.1rem;
+$border-width: 0.1rem;
+$border-color: $color-action;
+
+$box-shadow: 0 0 2rem 0.4rem rgba(21, 26, 79, 0.1);

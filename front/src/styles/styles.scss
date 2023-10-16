@@ -1,0 +1,75 @@
+// font
+
+
+@font-face { font-family: "Google Sans";
+  src: url("//fonts.gstatic.com/s/googlesans/v14/4UabrENHsxJlGDuGo1OIlLU94YtzCwM.ttf") format("truetype");
+}
+
+
+
+
+/* 3. UIKit Variables and Mixins */
+@import "variables-theme";
+@import "mixins-theme";
+@import "heading";
+
+
+
+/* 4. UIKit style */
+
+@import "uikit-theme";
+@import "./components/drop";
+@import "./components/animation";
+@import "./components/base";
+@import "./components/visibility";
+@import "./components/column";
+@import "./components/container";
+@import "./components/flex";
+@import "./components/grid";
+@import "./components/variables";
+@import "./components/margin";
+@import "./components/padding";
+@import "./components/width";
+@import "./components/navbar";
+@import "./components/position";
+@import "./components/text";
+@import "./components/form";
+@import "./components/utility";
+@import "./components/offcanvas";
+@import "./components/slider";
+@import "./components/modal";
+@import "./components/card";
+
+
+h1 {
+  @include heading-1;
+}
+
+h2{
+  @include heading-2;
+}
+
+h3 {
+  @include heading-3;
+}
+
+h4 {
+  @include heading-4;
+}
+
+h5 {
+  @include heading-5;
+}
+
+.body-l{
+  @include typography($font-size-m, $font-weight-light, 130%)
+}
+
+.body-m{
+  @include typography($font-size-s, $font-weight-light, 125%)
+
+}
+
+.body-s{
+  @include typography($font-size-xs, $font-weight-light,125%)
+}

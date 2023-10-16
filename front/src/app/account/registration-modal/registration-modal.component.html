@@ -1,0 +1,168 @@
+<div id="registration-modal" uk-modal class="uk-flex-top">
+  <div class="uk-modal-dialog uk-modal-body card">
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    <h2 class="card-title">Sign up to start meeting people!</h2>
+    <h3 class="body-s card-title">
+      Find love, connect, and create your own love story! Don't miss out - sign
+      up now and let the journey of romance begin.
+    </h3>
+
+    <form
+      [formGroup]="registrationForm"
+      (ngSubmit)="onSubmit()"
+      class="form-wrapper"
+    >
+      <div class="form-group">
+        <label for="username" class="body-s">Username</label>
+        <input
+          class="uk-input input"
+          placeholder="User name"
+          [ngClass]="{
+            'uk-form-danger':
+              registrationForm.get('username')?.hasError('required') &&
+              registrationForm.get('username')?.touched
+          }"
+          type="text"
+          id="username"
+          formControlName="username"
+        />
+        <div
+          *ngIf="
+            registrationForm.get('username')?.hasError('required') &&
+            registrationForm.get('username')?.touched
+          "
+        >
+          Username is required.
+        </div>
+        <div
+          *ngIf="
+            registrationForm.get('username')?.hasError('minlength') &&
+            registrationForm.get('username')?.touched
+          "
+        >
+          Username must be at least 3 characters long.
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email" class="body-s">Email</label>
+        <input
+          class="uk-input input"
+          [ngClass]="{
+            'uk-form-danger':
+              registrationForm.get('email')?.hasError('required') &&
+              registrationForm.get('email')?.touched
+          }"
+          type="text"
+          id="email"
+          formControlName="email"
+        />
+        <div
+          *ngIf="
+            registrationForm.get('email')?.hasError('required') &&
+            registrationForm.get('email')?.touched
+          "
+        >
+          email is required.
+        </div>
+        <div
+          *ngIf="
+            registrationForm.get('email')?.hasError('minlength') &&
+            registrationForm.get('email')?.touched
+          "
+        >
+          email must be at least 3 characters long.
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="password" class="body-s">Password</label>
+        <input
+          class="uk-input input"
+          [ngClass]="{
+            'uk-form-danger':
+              registrationForm.get('password')?.hasError('required') &&
+              registrationForm.get('password')?.touched
+          }"
+          type="text"
+          id="password"
+          formControlName="password"
+        />
+        <div
+          *ngIf="
+            registrationForm.get('password')?.hasError('required') &&
+            registrationForm.get('password')?.touched
+          "
+        >
+          password is required.
+        </div>
+        <div
+          *ngIf="
+            registrationForm.get('password')?.hasError('minlength') &&
+            registrationForm.get('password')?.touched
+          "
+        >
+          password must be at least 3 characters long.
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="firstName" class="body-s">First name</label>
+        <input
+          class="uk-input input"
+          [ngClass]="{
+            'uk-form-danger':
+              registrationForm.get('firstName')?.hasError('required') &&
+              registrationForm.get('firstName')?.touched
+          }"
+          type="text"
+          id="firstName"
+          formControlName="firstName"
+        />
+        <div
+          *ngIf="
+            registrationForm.get('firstName')?.hasError('required') &&
+            registrationForm.get('firstName')?.touched
+          "
+        >
+          firstName is required.
+        </div>
+        <div
+          *ngIf="
+            registrationForm.get('firstName')?.hasError('minlength') &&
+            registrationForm.get('firstName')?.touched
+          "
+        >
+          firstName must be at least 3 characters long.
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="lastName" class="body-s">Last name</label>
+        <input
+          class="uk-input input"
+          [ngClass]="{
+            'uk-form-danger':
+              registrationForm.get('lastName')?.hasError('required') &&
+              registrationForm.get('lastName')?.touched
+          }"
+          type="text"
+          id="lastName"
+          formControlName="lastName"
+        />
+        <div
+          *ngIf="
+            registrationForm.get('lastName')?.hasError('required') &&
+            registrationForm.get('lastName')?.touched
+          "
+        >
+          lastName is required.
+        </div>
+        <div
+          *ngIf="
+            registrationForm.get('lastName')?.hasError('minlength') &&
+            registrationForm.get('lastName')?.touched
+          "
+        >
+          lastName must be at least 3 characters long.
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

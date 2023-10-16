@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="uk-card uk-card-default uk-card-body card">
+    <img src="../../../assets/icons/matcha_logo.svg" alt="My Logo" />
+    <h3 class="card-title body-l">Your World. Your Love.</h3>
+    <p class="body-m">
+      Join the <a href="#" class="link">dating site </a>where you could meet
+      anyone, anywhere!
+    </p>
+    <div class="images-wrapper">
+      <div class="image-container">
+        <img src="../../../assets/images/profile-1.jpeg" alt="profile 1" />
+        <p class="body-s">Ped</p>
+        <p class="body-s">London, UK</p>
+      </div>
+      <div class="image-container">
+        <img src="../../../assets/images/profile-3.jpeg" alt="profile 3" />
+        <p class="body-s">Laura</p>
+        <p class="body-s">Stokholm, Sweden</p>
+      </div>
+      <div class="image-container">
+        <img src="../../../assets/images/profile-4.jpeg" alt="profile 4" />
+        <p class="body-s">John</p>
+        <p class="body-s">Riga, Latvia</p>
+      </div>
+    </div>
+    <button
+      class="button-customized button-registration body-s"
+      type="button"
+      uk-toggle="target: #modal-example"
+      (click)="toggleRegistrationModal()"
+    >
+      Take a Chance
+    </button>
+  </div>
+  <div class="button-wrapper">
+    <button class="button-customized body-s">English</button>
+    <button class="button-customized body-s">Sign in</button>
+  </div>
+</div>
+
+<app-registration-modal #registrationPopup></app-registration-modal>

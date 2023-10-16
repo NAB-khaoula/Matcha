@@ -1,0 +1,25 @@
+@import "_variables";
+
+@mixin color-primary {
+  color: $color-action;
+}
+
+@mixin typography(
+  $size: 1.4rem,
+  $weight: 500,
+  $line-height: 125%,
+  $font-family: $font-primary,
+  $font-style: normal
+) {
+  font-family: $font-family;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+  font-style: $font-style;
+}
+
+@mixin border ($border-radius: $border-radius-s, $border: $border-color) {
+  border-radius: $border-radius;
+  border-width: $border-width;
+  border-color: $border;
+}

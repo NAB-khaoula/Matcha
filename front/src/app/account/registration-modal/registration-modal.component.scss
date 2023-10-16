@@ -1,0 +1,38 @@
+@import "variables";
+@import "mixins";
+@import "heading";
+
+.card{
+  background-image: url("../../../assets/images/registration-background.jpg");
+  background-size: cover;
+  background-position: center;
+  @include border;
+  margin: $spacing-m auto;
+  width: 50%;
+
+
+
+  .card-title{
+    color: $color-text-default;
+  }
+
+  p {
+    color: $color-text-default;
+  }
+}
+
+.form-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-3xs;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+}
+
+.input{
+  @include border($border-radius-s, $color-text-light);
+  width: 70%;
+}

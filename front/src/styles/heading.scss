@@ -1,0 +1,26 @@
+@import "mixins";
+
+
+@mixin heading-1 {
+  @include typography(2rem, bold, 120%);
+}
+
+@mixin heading-2 {
+  @include typography(1.5rem, bold, 130%);
+
+}
+
+@mixin heading-3($font: $font-primary) {
+  //Same size on mobile
+  @include typography(1.25rem, bold, 140%, $font);
+}
+
+@mixin heading-4($font: $font-primary) {
+  //Same size on mobile
+  @include typography(1.125rem, bold, 150%, $font);
+}
+
+@mixin heading-5($font: $font-primary) {
+  //Same size on mobile
+  @include typography(1rem, bold, 150%, $font);
+}

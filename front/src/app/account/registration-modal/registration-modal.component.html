@@ -2,7 +2,7 @@
   <div class="uk-modal-dialog uk-modal-body card">
     <button class="uk-modal-close-default" type="button" uk-close></button>
     <h2 class="card-title">Sign up to start meeting people!</h2>
-    <h3 class="body-s card-title">
+    <h3 class="body-s">
       Find love, connect, and create your own love story! Don't miss out - sign
       up now and let the journey of romance begin.
     </h3>
@@ -16,7 +16,7 @@
         <label for="username" class="body-s">Username</label>
         <input
           class="uk-input input"
-          placeholder="User name"
+          [placeholder]="'Username'"
           [ngClass]="{
             'uk-form-danger':
               registrationForm.get('username')?.hasError('required') &&
@@ -47,6 +47,7 @@
         <label for="email" class="body-s">Email</label>
         <input
           class="uk-input input"
+          [placeholder]="'email'"
           [ngClass]="{
             'uk-form-danger':
               registrationForm.get('email')?.hasError('required') &&
@@ -77,6 +78,7 @@
         <label for="password" class="body-s">Password</label>
         <input
           class="uk-input input"
+          [placeholder]="'Password'"
           [ngClass]="{
             'uk-form-danger':
               registrationForm.get('password')?.hasError('required') &&
@@ -107,6 +109,7 @@
         <label for="firstName" class="body-s">First name</label>
         <input
           class="uk-input input"
+          [placeholder]="'firstName'"
           [ngClass]="{
             'uk-form-danger':
               registrationForm.get('firstName')?.hasError('required') &&
@@ -137,6 +140,7 @@
         <label for="lastName" class="body-s">Last name</label>
         <input
           class="uk-input input"
+          [placeholder]="'lastName'"
           [ngClass]="{
             'uk-form-danger':
               registrationForm.get('lastName')?.hasError('required') &&

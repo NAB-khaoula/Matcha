@@ -13,7 +13,8 @@
 
 
   .card-title{
-    color: $color-text-default;
+    color: black;
+    text-align: center;
   }
 
   p {
@@ -29,7 +30,9 @@
 
 .form-group{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: $spacing-m;
+  color: black;
 }
 
 .input{

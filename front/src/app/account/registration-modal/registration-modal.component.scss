@@ -1,6 +1,7 @@
 @import "variables";
 @import "mixins";
 @import "heading";
+@import "shared-style";
 
 .card{
   background-image: url("../../../assets/images/registration-background.jpg");
@@ -17,8 +18,9 @@
     text-align: center;
   }
 
-  p {
+  h3 {
     color: $color-text-default;
+    text-align: center;
   }
 }
 
@@ -26,16 +28,23 @@
   display: flex;
   flex-direction: column;
   gap: $spacing-3xs;
+  width: 70%;
+  margin: auto;
 }
 
 .form-group{
   display: flex;
   flex-direction: row;
-  gap: $spacing-m;
+  justify-content: space-between;
   color: black;
 }
 
 .input{
   @include border($border-radius-s, $color-text-light);
   width: 70%;
+}
+
+.button-login{
+  align-self: center;
+  width: 50%;
 }

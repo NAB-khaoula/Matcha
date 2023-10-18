@@ -2,6 +2,7 @@
 @import "variables";
 @import "mixins";
 @import "heading";
+@import "shared-style";
 
 h1 h2 h3 {
   margin: 0;
@@ -38,21 +39,7 @@ h1 h2 h3 {
   }
 }
 
-.button-customized {
-  padding: $spacing-3xs $spacing-s;
-}
 
-.button-registration{
-  @include border;
-  background-color: inherit;
-  color: $color-action;
-  margin-top: $spacing-xs;
-
-  &:hover{
-    background-color: $color-action;
-    color: $color-white;
-  }
-}
 
 .link{
   color: $color-action;

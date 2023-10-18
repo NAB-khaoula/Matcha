@@ -13,7 +13,7 @@
       class="form-wrapper"
     >
       <div class="form-group">
-        <label for="username" class="body-s">Username</label>
+        <label for="username" class="body-s">Username:</label>
         <input
           class="uk-input input"
           [placeholder]="'Username'"
@@ -26,25 +26,27 @@
           id="username"
           formControlName="username"
         />
-        <div
-          *ngIf="
-            registrationForm.get('username')?.hasError('required') &&
-            registrationForm.get('username')?.touched
-          "
-        >
-          Username is required.
-        </div>
-        <div
-          *ngIf="
-            registrationForm.get('username')?.hasError('minlength') &&
-            registrationForm.get('username')?.touched
-          "
-        >
-          Username must be at least 3 characters long.
-        </div>
+      </div>
+      <div
+        *ngIf="
+          registrationForm.get('username')?.hasError('required') &&
+          registrationForm.get('username')?.touched
+        "
+        class="alert-text"
+      >
+        Username is required.
+      </div>
+      <div
+        *ngIf="
+          registrationForm.get('username')?.hasError('minlength') &&
+          registrationForm.get('username')?.touched
+        "
+        class="alert-text"
+      >
+        Username must be at least 3 characters long.
       </div>
       <div class="form-group">
-        <label for="email" class="body-s">Email</label>
+        <label for="email" class="body-s">Email:</label>
         <input
           class="uk-input input"
           [placeholder]="'email'"
@@ -53,29 +55,31 @@
               registrationForm.get('email')?.hasError('required') &&
               registrationForm.get('email')?.touched
           }"
-          type="text"
+          type="email"
           id="email"
           formControlName="email"
         />
-        <div
-          *ngIf="
-            registrationForm.get('email')?.hasError('required') &&
-            registrationForm.get('email')?.touched
-          "
-        >
-          email is required.
-        </div>
-        <div
-          *ngIf="
-            registrationForm.get('email')?.hasError('minlength') &&
-            registrationForm.get('email')?.touched
-          "
-        >
-          email must be at least 3 characters long.
-        </div>
+      </div>
+      <div
+        *ngIf="
+          registrationForm.get('email')?.hasError('required') &&
+          registrationForm.get('email')?.touched
+        "
+        class="alert-text"
+      >
+        email is required.
+      </div>
+      <div
+        *ngIf="
+          registrationForm.get('email')?.hasError('minlength') &&
+          registrationForm.get('email')?.touched
+        "
+        class="alert-text"
+      >
+        email must be at least 3 characters long.
       </div>
       <div class="form-group">
-        <label for="password" class="body-s">Password</label>
+        <label for="password" class="body-s">Password:</label>
         <input
           class="uk-input input"
           [placeholder]="'Password'"
@@ -84,29 +88,31 @@
               registrationForm.get('password')?.hasError('required') &&
               registrationForm.get('password')?.touched
           }"
-          type="text"
+          type="password"
           id="password"
           formControlName="password"
         />
-        <div
-          *ngIf="
-            registrationForm.get('password')?.hasError('required') &&
-            registrationForm.get('password')?.touched
-          "
-        >
-          password is required.
-        </div>
-        <div
-          *ngIf="
-            registrationForm.get('password')?.hasError('minlength') &&
-            registrationForm.get('password')?.touched
-          "
-        >
-          password must be at least 3 characters long.
-        </div>
+      </div>
+      <div
+        *ngIf="
+          registrationForm.get('password')?.hasError('required') &&
+          registrationForm.get('password')?.touched
+        "
+        class="alert-text"
+      >
+        password is required.
+      </div>
+      <div
+        *ngIf="
+          registrationForm.get('password')?.hasError('minlength') &&
+          registrationForm.get('password')?.touched
+        "
+        class="alert-text"
+      >
+        password must be at least 3 characters long.
       </div>
       <div class="form-group">
-        <label for="firstName" class="body-s">First name</label>
+        <label for="firstName" class="body-s">First name:</label>
         <input
           class="uk-input input"
           [placeholder]="'firstName'"
@@ -119,25 +125,27 @@
           id="firstName"
           formControlName="firstName"
         />
-        <div
-          *ngIf="
-            registrationForm.get('firstName')?.hasError('required') &&
-            registrationForm.get('firstName')?.touched
-          "
-        >
-          firstName is required.
-        </div>
-        <div
-          *ngIf="
-            registrationForm.get('firstName')?.hasError('minlength') &&
-            registrationForm.get('firstName')?.touched
-          "
-        >
-          firstName must be at least 3 characters long.
-        </div>
+      </div>
+      <div
+        *ngIf="
+          registrationForm.get('firstName')?.hasError('required') &&
+          registrationForm.get('firstName')?.touched
+        "
+        class="alert-text"
+      >
+        firstName is required.
+      </div>
+      <div
+        *ngIf="
+          registrationForm.get('firstName')?.hasError('minlength') &&
+          registrationForm.get('firstName')?.touched
+        "
+        class="alert-text"
+      >
+        firstName must be at least 3 characters long.
       </div>
       <div class="form-group">
-        <label for="lastName" class="body-s">Last name</label>
+        <label for="lastName" class="body-s">Last name:</label>
         <input
           class="uk-input input"
           [placeholder]="'lastName'"
@@ -150,23 +158,31 @@
           id="lastName"
           formControlName="lastName"
         />
-        <div
-          *ngIf="
-            registrationForm.get('lastName')?.hasError('required') &&
-            registrationForm.get('lastName')?.touched
-          "
-        >
-          lastName is required.
-        </div>
-        <div
-          *ngIf="
-            registrationForm.get('lastName')?.hasError('minlength') &&
-            registrationForm.get('lastName')?.touched
-          "
-        >
-          lastName must be at least 3 characters long.
-        </div>
       </div>
+      <div
+        *ngIf="
+          registrationForm.get('lastName')?.hasError('required') &&
+          registrationForm.get('lastName')?.touched
+        "
+        class="alert-text"
+      >
+        lastName is required.
+      </div>
+      <div
+        *ngIf="
+          registrationForm.get('lastName')?.hasError('minlength') &&
+          registrationForm.get('lastName')?.touched
+        "
+        class="alert-text"
+      >
+        lastName must be at least 3 characters long.
+      </div>
+      <button
+        type="submit"
+        class="button-customized button-registration body-s button-login"
+      >
+        Login
+      </button>
     </form>
   </div>
 </div>

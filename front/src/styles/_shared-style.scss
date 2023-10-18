@@ -1,0 +1,21 @@
+.button-customized {
+  padding: $spacing-3xs $spacing-s;
+}
+
+.button-registration{
+  @include border;
+  background-color: inherit;
+  color: $color-action;
+  margin-top: $spacing-xs;
+
+  &:hover{
+    background-color: $color-action;
+    color: $color-white;
+  }
+}
+
+
+.alert-text{
+  color: red;
+  text-align: center;
+}

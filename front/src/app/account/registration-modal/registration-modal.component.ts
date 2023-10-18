@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { AuthService } from 'src/app/core/services/auth/auth.service';
 import UIkit from 'uikit';
 
 @Component({
@@ -10,13 +12,17 @@ import UIkit from 'uikit';
 export class RegistrationModalComponent {
   registrationForm: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) {
+  constructor(
+    private formBuilder: FormBuilder,
+    private authService: AuthService,
+    private router: Router
+  ) {
     this.registrationForm = this.formBuilder.group({
       username: ['', [Validators.required, Validators.minLength(3)]],
-      email: [],
-      password: [],
-      firstName: [],
-      lastName: [],
+      email: ['', Validators.required],
+      password: ['', Validators.required],
+      firstName: ['', Validators.required],
+      lastName: ['', Validators.required],
     });
   }
 
@@ -32,8 +38,11 @@ export class RegistrationModalComponent {
 
   onSubmit() {
     if (this.registrationForm?.valid) {
-      const formData = this.registrationForm.value;
-      console.log(formData);
+      const userRegistration = this.registrationForm.value;
+      this.authService.signUp(userRegistration).subscribe((res) => {
+        this.router.navigate(['']);
+        console.log('wsel lhna b3da');
+      });
     }
   }
 }

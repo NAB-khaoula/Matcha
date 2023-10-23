@@ -112,70 +112,70 @@
         password must be at least 3 characters long.
       </div>
       <div class="form-group">
-        <label for="firstName" class="body-s">First name:</label>
+        <label for="firstname" class="body-s">First name:</label>
         <input
           class="uk-input input"
-          [placeholder]="'firstName'"
+          [placeholder]="'firstname'"
           [ngClass]="{
             'uk-form-danger':
-              registrationForm.get('firstName')?.hasError('required') &&
-              registrationForm.get('firstName')?.touched
+              registrationForm.get('firstname')?.hasError('required') &&
+              registrationForm.get('firstname')?.touched
           }"
           type="text"
-          id="firstName"
-          formControlName="firstName"
+          id="firstname"
+          formControlName="firstname"
         />
       </div>
       <div
         *ngIf="
-          registrationForm.get('firstName')?.hasError('required') &&
-          registrationForm.get('firstName')?.touched
+          registrationForm.get('firstname')?.hasError('required') &&
+          registrationForm.get('firstname')?.touched
         "
         class="alert-text"
       >
-        firstName is required.
+        firstname is required.
       </div>
       <div
         *ngIf="
-          registrationForm.get('firstName')?.hasError('minlength') &&
-          registrationForm.get('firstName')?.touched
+          registrationForm.get('firstname')?.hasError('minlength') &&
+          registrationForm.get('firstname')?.touched
         "
         class="alert-text"
       >
-        firstName must be at least 3 characters long.
+        firstname must be at least 3 characters long.
       </div>
       <div class="form-group">
-        <label for="lastName" class="body-s">Last name:</label>
+        <label for="lastname" class="body-s">Last name:</label>
         <input
           class="uk-input input"
-          [placeholder]="'lastName'"
+          [placeholder]="'lastname'"
           [ngClass]="{
             'uk-form-danger':
-              registrationForm.get('lastName')?.hasError('required') &&
-              registrationForm.get('lastName')?.touched
+              registrationForm.get('lastname')?.hasError('required') &&
+              registrationForm.get('lastname')?.touched
           }"
           type="text"
-          id="lastName"
-          formControlName="lastName"
+          id="lastname"
+          formControlName="lastname"
         />
       </div>
       <div
         *ngIf="
-          registrationForm.get('lastName')?.hasError('required') &&
-          registrationForm.get('lastName')?.touched
+          registrationForm.get('lastname')?.hasError('required') &&
+          registrationForm.get('lastname')?.touched
         "
         class="alert-text"
       >
-        lastName is required.
+        lastname is required.
       </div>
       <div
         *ngIf="
-          registrationForm.get('lastName')?.hasError('minlength') &&
-          registrationForm.get('lastName')?.touched
+          registrationForm.get('lastname')?.hasError('minlength') &&
+          registrationForm.get('lastname')?.touched
         "
         class="alert-text"
       >
-        lastName must be at least 3 characters long.
+        lastname must be at least 3 characters long.
       </div>
       <button
         type="submit"

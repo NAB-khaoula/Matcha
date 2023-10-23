@@ -21,8 +21,8 @@ export class RegistrationModalComponent {
       username: ['', [Validators.required, Validators.minLength(3)]],
       email: ['', Validators.required],
       password: ['', Validators.required],
-      firstName: ['', Validators.required],
-      lastName: ['', Validators.required],
+      firstname: ['', Validators.required],
+      lastname: ['', Validators.required],
     });
   }
 

@@ -19,7 +19,7 @@ app.get('/users', db.getUsers)
 
 app.get('/users/:id', db.getUserById);
 
-app.post('/users', db.postUser);
+app.post('/register', db.postUser);
 
 app.listen(port, () => {
     console.log(`App running on port ${port}.`)

@@ -2,7 +2,7 @@ const Pool = require("pg").Pool;
 const pool = new Pool({
   user: "postgres",
   host: "localhost",
-  database: "test_erp",
+  database: "matchadb",
   password: "admin123",
   port: 5432,
 });
@@ -30,7 +30,6 @@ const getUserById = (request, response) => {
 
 const postUser = (request, response) => {
   const user = request.body;
-  console.log('body', user);
   pool.query(
     "INSERT INTO users(username, email, password, firstname, lastname) VALUES ($1, $2, $3, $4, $5) RETURNING *",
     [user.username, user.email, user.password, user.firstname, user.lastname],

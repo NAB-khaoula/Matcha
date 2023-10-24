@@ -40,8 +40,8 @@ export class RegistrationModalComponent {
     if (this.registrationForm?.valid) {
       const userRegistration = this.registrationForm.value;
       this.authService.signUp(userRegistration).subscribe((res) => {
-        this.router.navigate(['']);
-        console.log('wsel lhna b3da');
+        this.hidePopup();
+        this.router.navigate(['/home']);
       });
     }
   }

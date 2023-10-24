@@ -12,7 +12,6 @@ export class AuthService {
   constructor(private http: HttpClient) {}
 
   signUp(newUser: User): Observable<void> {
-    console.log('newUSer', newUser);
     return this.http.post<void>('http://localhost:3000/register', newUser);
   }
 }

@@ -2,12 +2,15 @@
 $font-primary: 'Google Sans';
 
 // palette
-$color-action: #F11926 !default;
-$color-action-hover: #F11926 !default;
+$color-action-primary: #F11926 !default;
+$color-action-primary-hover: #ad0000 !default;
+$color-action-secondary: #fff4f0;
+$color-action-secondary-hover: #bb8379;
+$color-white: #ffffff;
+$color-black: #000000;
 
 $color-text-default: #737373 !default;
 $color-text-light: #eef2f7 !default;
-$color-white: #ffffff;
 
 $background-secondary: #fffdef !default;
 $background-primary: #f1f1f1 !default;

@@ -11,6 +11,8 @@ app.use(
   })
 )
 
+// TODO need to create a database and the tables if they don't exist
+
 app.get('/', (request, response) => {
     response.json({ info: 'Node.js, Express, and Postgres API' })
 })

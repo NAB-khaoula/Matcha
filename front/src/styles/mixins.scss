@@ -1,7 +1,7 @@
 @import "_variables";
 
 @mixin color-primary {
-  color: $color-action;
+  color: $color-action-primary;
 }
 
 @mixin typography(

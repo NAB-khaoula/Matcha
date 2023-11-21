@@ -7,6 +7,10 @@ import { LoginComponent } from './account/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RegistrationModalComponent } from './account/registration-modal/registration-modal.component';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+
 
 @NgModule({
   declarations: [AppComponent, LoginComponent, RegistrationModalComponent],
@@ -15,6 +19,9 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatCheckboxModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

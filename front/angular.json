@@ -30,18 +30,15 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles/styles.scss"
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
-                "src/styles",
-                "./node_modules/uikit/src/scss"
+                "src/styles"
               ]
             },
-            "scripts": [
-              "./node_modules/uikit/dist/js/uikit.min.js",
-              "./node_modules/uikit/dist/js/uikit-icons.min.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -107,21 +104,21 @@
               }
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles/styles.scss"
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
-                "src/styles",
-                "./node_modules/uikit/src/scss"
+                "src/styles"
               ]
             },
-            "scripts": [
-              "./node_modules/uikit/dist/js/uikit.min.js",
-              "./node_modules/uikit/dist/js/uikit-icons.min.js"
-            ]
+            "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "acd21c55-ed9a-4237-9248-727978ae87a1"
   }
 }

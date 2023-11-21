@@ -8,37 +8,15 @@
 
 
 
-/* 3. UIKit Variables and Mixins */
-@import "variables-theme";
-@import "mixins-theme";
+/* TODO 3. project Variables and Mixins */
 @import "heading";
+@import "mixins";
+@import "variables";
 
 
 
-/* 4. UIKit style */
-
-@import "uikit-theme";
-@import "./components/drop";
-@import "./components/animation";
-@import "./components/base";
-@import "./components/visibility";
-@import "./components/column";
-@import "./components/container";
-@import "./components/flex";
-@import "./components/grid";
-@import "./components/variables";
-@import "./components/margin";
-@import "./components/padding";
-@import "./components/width";
-@import "./components/navbar";
-@import "./components/position";
-@import "./components/text";
-@import "./components/form";
-@import "./components/utility";
-@import "./components/offcanvas";
-@import "./components/slider";
-@import "./components/modal";
-@import "./components/card";
+/* 4. MAterialUI style */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
 
 
 h1 {
@@ -73,3 +51,6 @@ h5 {
 .body-s{
   @include typography($font-size-xs, $font-weight-light,125%)
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

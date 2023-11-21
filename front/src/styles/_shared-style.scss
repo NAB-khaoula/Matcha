@@ -5,11 +5,11 @@
 .button-registration{
   @include border;
   background-color: inherit;
-  color: $color-action;
+  color: $color-action-primary;
   margin-top: $spacing-xs;
 
   &:hover{
-    background-color: $color-action;
+    background-color: $color-action-primary;
     color: $color-white;
   }
 }

@@ -15,7 +15,6 @@ async function setupDatabase() {
     console.log(`${DB_DATABASE} database not found, creating it.`);
     await pool.query(`CREATE DATABASE "${DB_DATABASE}";`);
     console.log(`created database ${DB_DATABASE}.`);
-    //ANCHOR Create User TABLE
   } else {
     console.log(`The ${DB_DATABASE} database exists already!`);
   }
